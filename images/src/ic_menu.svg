@@ -1,0 +1,5 @@
+<svg width="44" height="22" viewBox="0 0 44 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M43 22C43.5523 22 44 21.5523 44 21C44 20.4477 43.5523 20 43 20V22ZM13 22H43V20H13V22Z" fill="currentColor"/>
+<path d="M43 12C43.5523 12 44 11.5523 44 11C44 10.4477 43.5523 10 43 10V12ZM0 12H43V10H0V12Z" fill="var(--color2)"/>
+<path d="M43 2C43.5523 2 44 1.55228 44 1C44 0.447715 43.5523 0 43 0V2ZM13 2H43V0H13V2Z" fill="currentColor"/>
+</svg>

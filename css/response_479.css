@@ -1,0 +1,205 @@
+@media (max-width: 479px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title_small: 35px;
+        --font_size_title: 40px;
+        --font_size_title_big: 45px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header .logo img
+    {
+        width: 200px;
+    }
+
+
+
+    /*---------------
+        Main menu
+    ---------------*/
+    .main_menu .head .logo img
+    {
+        width: 200px;
+    }
+
+
+    .main_menu .head .close_btn span
+    {
+        display: none;
+    }
+
+
+    .main_menu .links a
+    {
+        font-size: 21px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .cont
+    {
+        height: 440px;
+    }
+
+
+
+    /*------------
+        Awards
+    ------------*/
+    .awards .title br
+    {
+        display: none;
+    }
+
+
+
+    /*------------------
+        Our products
+    ------------------*/
+    .our_products .title,
+    .our_products .text_block
+    {
+        padding-right: 0;
+    }
+
+
+    .our_products .pluses
+    {
+        padding-right: 100px;
+    }
+
+
+    .our_products .pluses .row
+    {
+        margin-left: 0;
+
+        gap: 0;
+    }
+
+
+    .our_products .pluses .item
+    {
+        display: flex;
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        width: 100%;
+        margin-left: 0;
+
+        text-align: left;
+    }
+
+
+    .our_products .pluses .item + .item
+    {
+        margin-top: 20px;
+    }
+
+
+    .our_products .pluses .item .icon
+    {
+        margin-bottom: 0;
+    }
+
+
+    .our_products .pluses .item .icon + *
+    {
+        align-self: center;
+
+        width: calc(100% - 80px);
+    }
+
+
+    .our_products .link
+    {
+        top: 100%;
+        bottom: auto;
+    }
+
+
+    .our_products .link a
+    {
+        font-size: 15px;
+
+        width: 100px;
+        height: 100px;
+    }
+
+
+
+    .our_products .data .pluses
+    {
+        padding-right: 80px;
+    }
+
+
+    .our_products .data .info .link
+    {
+        right: -20px;
+        bottom: -80px;
+    }
+
+
+    .our_products .data .gallery .row
+    {
+        margin-bottom: -12px;
+        margin-left: -12px;
+    }
+
+
+    .our_products .data .gallery .row > *
+    {
+        width: calc(50% - 12px);
+        margin-bottom: 12px;
+        margin-left: 12px;
+    }
+
+
+
+    /*------------------
+        Loyalty card
+    ------------------*/
+    .loyalty_card .text_block
+    {
+        width: calc(100% - 124px);
+        margin-top: 0;
+    }
+
+
+    .loyalty_card .link
+    {
+        margin-right: 0;
+    }
+
+
+    .loyalty_card .link a
+    {
+        font-size: 15px;
+
+        width: 100px;
+        height: 100px;
+    }
+
+
+    .loyalty_card .img
+    {
+        bottom: -80px;
+
+        width: 128px;
+        height: 83px;
+        margin-right: 12px;
+    }
+}

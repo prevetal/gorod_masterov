@@ -1,0 +1,11 @@
+@media print,
+(max-width: 1899px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    .cont.big
+    {
+        padding: 0 40px;
+    }
+}

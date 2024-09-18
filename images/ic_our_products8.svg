@@ -1,0 +1,15 @@
+<svg width="85" height="85" viewBox="0 0 85 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="icn_2" clip-path="url(#clip0_75_465)">
+<path id="Ellipse 20" d="M22.2122 79.9995C10.497 79.9995 1 70.5975 1 58.9995C1 47.4015 10.497 37.9995 22.2122 37.9995C32.4744 37.9995 41.0346 45.2141 43 54.7995" stroke="black"/>
+<path id="Ellipse 21" d="M42.9659 54.9995C44.5094 58.4611 50.1373 59.1662 52.3882 58.8457C58.2489 58.8457 63 63.5811 63 69.4226C63 75.2641 58.2489 79.9995 52.3882 79.9995H22" stroke="black" stroke-linecap="round"/>
+<circle id="Ellipse 22" cx="21.5" cy="59.4995" r="6" stroke="black"/>
+<path id="Rectangle 49" d="M37.0321 6.12746L73.9807 39.382L81.728 46.3547C83.7028 48.1321 83.8629 51.1738 82.0855 53.1486V53.1486C80.3082 55.1234 77.2665 55.2834 75.2917 53.5061L67.5444 46.5333" stroke="black"/>
+<path id="Ellipse 23" d="M63.4598 50.472C57.5652 49.2447 51.9318 46.5043 47.1628 42.2121C36.8147 32.8986 33.3052 18.771 36.89 5.9993" stroke="black"/>
+<path id="Line 9" d="M63.4919 50.4365L73.6829 39.1135" stroke="black" stroke-linecap="round"/>
+</g>
+<defs>
+<clipPath id="clip0_75_465">
+<rect width="85" height="85" fill="white"/>
+</clipPath>
+</defs>
+</svg>

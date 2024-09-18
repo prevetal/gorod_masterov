@@ -1,0 +1,327 @@
+@media print,
+(max-width: 767px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size: 15px;
+        --font_size_title_small: 40px;
+        --font_size_title: 44px;
+        --font_size_title_big: 48px;
+    }
+
+
+    .block
+    {
+        margin-bottom: 80px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        padding: 24px 0;
+    }
+
+
+    header .logo img
+    {
+        width: 220px;
+    }
+
+
+
+    /*---------------
+        Main menu
+    ---------------*/
+    .main_menu .head
+    {
+        padding: 24px 0;
+    }
+
+
+    .main_menu .head .logo img
+    {
+        width: 220px;
+    }
+
+
+    .main_menu .head + .cont
+    {
+        align-content: flex-start;
+        align-items: flex-start;
+
+        height: auto;
+        padding-top: 140px;
+        padding-bottom: 40px;
+    }
+
+
+    .main_menu .links
+    {
+        margin-top: 0;
+
+        gap: 24px;
+    }
+
+
+    .main_menu .links a
+    {
+        font-size: 26px;
+    }
+
+
+    .main_menu .links .sub,
+    .main_menu .links > *:hover .sub
+    {
+        position: relative;
+        left: 0;
+
+        display: none;
+        visibility: hidden;
+
+        width: 100%;
+        padding: 24px 0 8px 24px;
+
+        pointer-events: auto;
+
+        opacity: 1;
+    }
+
+
+    .main_menu .links .sub.show
+    {
+        display: block;
+        visibility: visible;
+    }
+
+
+    .main_menu .links .sub a
+    {
+        font-size: 18px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .cont
+    {
+        height: 460px;
+        min-height: 0;
+    }
+
+
+    .main_slider .link a
+    {
+        padding: 15px 35px;
+
+        background: #ec0044;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info
+    {
+        padding: 80px 0;
+    }
+
+
+    .about_info .text_block
+    {
+        font-size: 17px;
+    }
+
+
+    .about_info .logos
+    {
+        margin-top: 48px;
+    }
+
+
+    .about_info .logos > *
+    {
+        width: calc(50% - 24px);
+    }
+
+
+
+    /*----------------------
+        About production
+    ----------------------*/
+    .about_production .item .link
+    {
+        margin-top: 28px;
+    }
+
+
+    .about_production .item .link a
+    {
+        padding: 15px 35px;
+    }
+
+
+
+    /*------------
+        Awards
+    ------------*/
+    .awards .items img
+    {
+        width: 140px;
+    }
+
+
+
+    /*------------------
+        Our products
+    ------------------*/
+    .our_products .global_title
+    {
+        font-size: 60px;
+
+        top: -86px;
+        left: 20px;
+    }
+
+
+    .our_products .title,
+    .our_products .text_block
+    {
+        padding-right: 132px;
+    }
+
+
+    .our_products .link a
+    {
+        font-size: 16px;
+
+        width: 108px;
+        height: 108px;
+    }
+
+
+    .our_products .pluses .item .icon
+    {
+        height: 60px;
+        margin-bottom: 12px;
+    }
+
+
+    .our_products .gallery
+    {
+        margin-top: 48px;
+    }
+
+
+
+    .our_products .data
+    {
+        width: calc(100% + 48px);
+        margin-right: -24px;
+        margin-left: -24px;
+        padding: 40px 0 80px;
+    }
+
+
+    .our_products .data .pluses
+    {
+        padding-right: 132px;
+    }
+
+
+    .our_products .data .pluses .item .icon
+    {
+        width: 60px;
+    }
+
+
+    .our_products .data .pluses .icon + *
+    {
+        max-width: calc(100% - 80px);
+        margin-left: 20px;
+    }
+
+
+
+    /*------------------
+        Loyalty card
+    ------------------*/
+    .loyalty_card
+    {
+        margin-bottom: 80px;
+    }
+
+
+    .loyalty_card .title
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+    .loyalty_card .text_block
+    {
+        align-self: center;
+
+        width: calc(100% - 188px);
+        margin-left: 0;
+    }
+
+
+    .loyalty_card .link
+    {
+        margin-right: 48px;
+    }
+
+
+    .loyalty_card .link a
+    {
+        font-size: 16px;
+
+        width: 108px;
+        height: 108px;
+    }
+
+
+
+    .loyalty_card .img
+    {
+        right: 0;
+        bottom: -120px;
+
+        width: 180px;
+        height: 117px;
+        margin-right: 0;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer
+    {
+        padding-bottom: 40px;
+    }
+
+
+    footer .col
+    {
+        width: 100%;
+    }
+
+
+    footer .col ~ .col
+    {
+        margin-top: 40px;
+    }
+}
