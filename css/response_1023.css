@@ -4,17 +4,165 @@
     /*-------------------
         Global styles
     -------------------*/
+    .cont,
+    .cont.big
+    {
+        padding: 0 45px;
+    }
+
+
+
+    .block.min
+    {
+        margin-bottom: 30px;
+    }
+
+
+
+    /*----------------
+        Pagination
+    ----------------*/
+    .pagination .prev
+    {
+        margin-right: 0;
+    }
+
+
+    .pagination .next
+    {
+        margin-left: 0;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        margin-bottom: 40px;
+        padding: 28px 0 23px;
+    }
+
+
+    header.absolute
+    {
+        padding: 32px 0;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head .global_title
+    {
+        font-size: 113px;
+
+        top: -56px;
+    }
+
+
+    .breadcrumbs
+    {
+        margin-bottom: 43px;
+    }
+
+
+    .page_desc
+    {
+        margin-top: 24px;
+    }
+
+    .page_desc.big_m
+    {
+        margin-top: 52px;
+    }
+
+
+    .page_sub_title
+    {
+        margin-top: 58px;
+    }
+
+
+    .page_head .image
+    {
+        width: calc(100% + 90px);
+        max-width: calc(100% + 90px);
+        margin: 50px -45px 0;
+    }
+
+
+
+    /*-----------------------
+        Page head marquee
+    -----------------------*/
+    .page_head_marquee .swiper
+    {
+        display: none;
+    }
+
+
+    .page_head_marquee .mob_phrase
+    {
+        display: block;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .cols .col
+    {
+        width: 100%;
+    }
+
+
+    .form .file
+    {
+        justify-content: center;
+
+        min-height: 0;
+        padding-top: 10px;
+    }
+
+
+    .form .exp
+    {
+        margin-top: 40px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .cont
+    {
+        height: auto;
+        min-height: 850px;
+    }
 
 
 
     /*----------------
         About info
     ----------------*/
+    .about_info
+    {
+        padding-top: 92px;
+    }
+
+
     .about_info .title
     {
-        width: 100%;
-        margin-bottom: 40px;
+        width: 592px;
+        max-width: 100%;
+        margin-bottom: 30px;
     }
+
 
     .about_info .title br
     {
@@ -24,7 +172,39 @@
 
     .about_info .text_block
     {
-        width: 100%;
+        width: 618px;
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+
+    .about_info .logos
+    {
+        justify-content: center;
+
+        margin-top: 60px;
+        margin-bottom: -28px;
+        margin-left: -44px;
+    }
+
+
+    .about_info .logos > *
+    {
+        width: calc(33.333% - 44px);
+        margin-bottom: 28px;
+        margin-left: 44px;
+    }
+
+
+    .about_info .logos > *
+    {
+        height: 96px;
+    }
+
+
+    .about_info .bg
+    {
+        display: none;
     }
 
 
@@ -33,7 +213,20 @@
         About production
     ----------------------*/
     .about_production .item .info,
-    .about_production .item .info.big,
+    .about_production .item .info.big
+    {
+        width: 100%;
+        margin: 0;
+    }
+
+
+    .about_production .item .info .text_block
+    {
+        width: 532px;
+        max-width: 100%;
+    }
+
+
     .about_production .item .image,
     .about_production .item .image.small
     {
@@ -43,14 +236,22 @@
 
     .about_production .item .image
     {
-        margin-bottom: 24px;
+        margin-bottom: 40px;
     }
 
 
     .about_production .item .info + .image
     {
-        margin-top: 24px;
+        margin-top: 40px;
         margin-bottom: 0;
+    }
+
+
+    .about_production .item .link
+    {
+        margin-top: 50px;
+
+        text-align: center;
     }
 
 
@@ -67,6 +268,12 @@
     }
 
 
+    .awards .title
+    {
+        font-size: var(--font_size_title);
+    }
+
+
     .awards .title span
     {
         margin-left: 0;
@@ -80,22 +287,16 @@
     }
 
 
-    .awards .items img
-    {
-        width: 160px;
-    }
-
-
 
     /*------------------
         Our products
     ------------------*/
     .our_products .global_title
     {
-        font-size: 96px;
+        font-size: 104px;
 
-        top: -108px;
-        left: 24px;
+        top: -114px;
+        left: 0;
 
         margin-left: 0;
     }
@@ -109,41 +310,29 @@
 
     .our_products .title
     {
-        margin-bottom: 12px;
-        padding-right: 140px;
-    }
-
-
-    .our_products .text_block
-    {
-        padding-right: 140px;
+        margin-bottom: 30px;
     }
 
 
     .our_products .link
     {
-        top: auto;
-        right: 0;
-        bottom: 0;
-        left: auto;
-
-        margin-top: 0;
+        margin-top: 236px;
     }
 
 
     .our_products .link a
     {
-        font-size: 17px;
+        font-size: 22px;
 
-        width: 116px;
-        height: 116px;
+        width: 140px;
+        height: 140px;
     }
 
 
     .our_products .pluses
     {
         width: 100%;
-        margin-top: 40px;
+        margin-top: 50px;
     }
 
 
@@ -162,9 +351,17 @@
     }
 
 
+    .our_products .pluses .item .icon
+    {
+        height: 85px;
+        margin-bottom: 21px;
+    }
+
+
     .our_products .gallery
     {
-        margin-top: 60px;
+        margin-top: 85px;
+        padding: 0 45px;
     }
 
 
@@ -173,9 +370,14 @@
         display: block;
         overflow: auto;
 
+        width: calc(100% + 90px);
+        margin-right: -45px;
+        margin-left: -45px;
+        padding: 0 45px;
+
         white-space: nowrap;
 
-        scroll-padding: 0;
+        scroll-padding: 0 45px;
         scroll-snap-type: x mandatory;
         scrollbar-color: transparent transparent !important;
         scrollbar-width: thin !important;
@@ -203,7 +405,7 @@
     {
         display: inline-block;
 
-        width: 280px;
+        width: 464px;
         max-width: none;
         margin: 0;
 
@@ -221,35 +423,22 @@
 
     .our_products .data
     {
-        padding: 48px 24px 80px;
+        width: calc(100% + 90px);
+        margin-right: -45px;
+        margin-left: -45px;
+        padding: 96px 0 120px;
     }
 
 
     .our_products .data .info
     {
-        width: 100%;
-    }
-
-
-    .our_products .data .title,
-    .our_products .data .text_block
-    {
-        padding-right: 0;
-    }
-
-
-    .our_products .data .info .link
-    {
-        top: auto;
-        right: 0;
-        bottom: 0;
-        left: auto;
+        width: 369px;
     }
 
 
     .our_products .data .pluses
     {
-        margin-top: 24px;
+        margin-top: 51px;
     }
 
     .our_products .pluses.alignend
@@ -261,28 +450,47 @@
     .our_products .data .pluses .item
     {
         margin-left: 0;
+        padding-right: 24px;
     }
 
 
     .our_products .data .gallery
     {
-        width: 100%;
-        margin-top: 40px;
+        width: 308px;
+        margin-right: -45px;
+        padding: 0;
     }
 
 
     .our_products .data .gallery .row
     {
-        margin-bottom: -24px;
-        margin-left: -24px;
+        margin-bottom: 0;
+        margin-left: 0;
     }
 
 
     .our_products .data .gallery .row > *
     {
-        width: calc(50% - 24px);
-        margin-bottom: 24px;
-        margin-left: 24px;
+        display: none;
+
+        width: 100%;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+
+    .our_products .data .gallery .row > *:first-child
+    {
+        display: block;
+    }
+
+
+
+    .our_products .data .marquee
+    {
+        font-size: 69px;
+
+        bottom: 45px;
     }
 
 
@@ -290,40 +498,326 @@
     /*------------------
         Loyalty card
     ------------------*/
+    .loyalty_card
+    {
+        position: relative;
+
+        margin-bottom: 150px;
+    }
+
+
+    .loyalty_card .row
+    {
+        display: block;
+    }
+
+
     .loyalty_card .title
     {
-        width: 364px;
+        width: 306px;
     }
 
 
     .loyalty_card .text_block
     {
-        width: 160px;
+        width: 306px;
+        margin-top: 20px;
+        margin-left: 0;
     }
 
 
     .loyalty_card .link
     {
-        margin-left: auto;
+        position: absolute;
+        right: 107px;
+        bottom: -50px;
     }
 
 
     .loyalty_card .link a
     {
-        font-size: 17px;
+        font-size: 22px;
 
-        width: 116px;
-        height: 116px;
+        width: 140px;
+        height: 140px;
     }
 
 
     .loyalty_card .img
     {
-        bottom: 120px;
+        top: auto;
+        right: -8px;
+        bottom: 22px;
 
-        width: 240px;
-        height: 156px;
-        margin-right: -440px;
+        width: 344px;
+        height: 224px;
+        margin-right: 0;
+    }
+
+
+
+    /*--------------
+        Purchase
+    --------------*/
+    .purchase .email
+    {
+        margin-top: 10px;
+    }
+
+
+
+    /*---------------
+        Vacancies
+    ---------------*/
+    .vacancies .accordion
+    {
+        margin-top: 65px;
+    }
+
+
+
+    /*-----------------
+        Send resume
+    -----------------*/
+    .send_resume .block_head .title br
+    {
+        display: block;
+    }
+
+
+
+    /*---------------
+        Vacancies
+    ---------------*/
+    .vacancies .accordion
+    {
+        margin-top: 40px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .grid
+    {
+        margin-top: 76px;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info .article_data
+    {
+        margin: 36px -45px 0;
+        padding: 45px;
+    }
+
+
+
+    .article_info .ingredients
+    {
+        margin-top: 40px;
+    }
+
+
+    .article_info .ingredients .info
+    {
+        width: 100%;
+    }
+
+
+    .article_info .ingredients .title,
+    .article_info .ingredients .list > *
+    {
+        padding-left: 40px;
+    }
+
+
+    .article_info .ingredients .image
+    {
+        width: 100%;
+        margin: 44px 0 0;
+    }
+
+
+
+    .article_info .step
+    {
+        gap: 31px;
+    }
+
+
+    .article_info .step .image
+    {
+        width: 321px;
+    }
+
+
+    .article_info .step .image + *
+    {
+        max-width: calc(100% - 352px);
+    }
+
+
+
+    .article_info .pagination
+    {
+        gap: 80px;
+    }
+
+
+
+    /*------------
+        Videos
+    ------------*/
+    .videos .videos_data
+    {
+        margin: 36px -45px 0;
+        padding: 45px;
+    }
+
+
+
+    /*-----------
+        Media
+    -----------*/
+    .media .media_data
+    {
+        margin: 36px -45px 0;
+        padding: 45px;
+    }
+
+
+
+    /*------------
+        Stores
+    ------------*/
+    .stores .cont
+    {
+        padding: 0;
+    }
+
+
+    .stores .list .head
+    {
+        padding: 24px 45px;
+    }
+
+
+    .stores .data .addresses
+    {
+        padding: 0 45px;
+    }
+
+
+    .stores .data .map
+    {
+        height: 340px;
+        margin-top: 40px;
+    }
+
+
+
+    /*--------------------
+        Direction head
+    --------------------*/
+    .direction_head
+    {
+        height: 700px;
+        padding-top: 297px;
+    }
+
+
+
+    /*--------------------
+        Direction info
+    --------------------*/
+    .direction_info .data
+    {
+        margin-left: 107px;
+    }
+
+
+    .direction_info .data .text_block
+    {
+        width: 492px;
+    }
+
+
+    .direction_info .pluses .row
+    {
+        margin-left: -24px;
+    }
+
+
+    .direction_info .pluses .row > *
+    {
+        width: calc(50% - 24px);
+        margin-left: 24px;
+    }
+
+
+    .direction_info .pluses .icon + *
+    {
+        width: calc(100% - 110px);
+    }
+
+
+
+    .direction_info .bg
+    {
+        left: -224px;
+    }
+
+
+    .direction_info .bg2
+    {
+        top: 386px;
+        right: 0;
+
+        width: 130px;
+        height: 124px;
+        margin-right: 0;
+    }
+
+
+
+    /*-------------
+        History
+    -------------*/
+    .history .accordion
+    {
+        width: calc(100% + 90px);
+        max-width: calc(100% + 90px);
+        margin-right: -45px;
+        margin-left: -45px;
+    }
+
+
+    .history .accordion .head
+    {
+        padding-right: 45px;
+        padding-left: 45px;
+    }
+
+
+    .history .accordion .data
+    {
+        padding: 0 45px 45px;
+    }
+
+
+
+    /*----------
+        Team
+    ----------*/
+    .team .rules .image
+    {
+        width: calc(100% + 90px);
+        margin: 50px -45px 0;
     }
 
 
@@ -333,25 +827,90 @@
     ------------*/
     footer
     {
-        padding-bottom: 60px;
+        padding-top: 80px;
+        padding-bottom: 76px;
     }
 
 
     footer .col
     {
-        width: calc(50% - 12px);
+        width: 333px;
+        max-width: 100%;
     }
 
 
     footer .location,
     footer .phone
     {
-        margin-top: 30px;
+        margin-top: 38px;
+    }
+
+
+    footer .location
+    {
+        font-size: 18px;
+
+        width: 100%;
+    }
+
+
+    footer .phone,
+    footer .email
+    {
+        font-size: 18px;
     }
 
 
     footer .menu
     {
-        display: none;
+        width: 276px;
+        max-width: 100%;
+        padding-top: 21px;
+    }
+
+
+    footer .menu + .col
+    {
+        width: 100%;
+        margin-top: 100px;
+
+        text-align: center;
+    }
+
+
+    footer .links
+    {
+        font-size: 16px;
+
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        gap: 20px;
+    }
+
+
+    footer .links .mob_sep
+    {
+        display: block;
+    }
+
+
+    footer .copyright
+    {
+        font-size: 16px;
+
+        margin-top: 20px;
+    }
+
+
+    footer .socials
+    {
+        justify-content: center;
+
+        margin-top: 20px;
     }
 }

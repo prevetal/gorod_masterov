@@ -6,7 +6,6 @@
     -------------------*/
     :root
     {
-        --font_size: 18px;
         --font_size_title_small: 60px;
         --font_size_title: 68px;
         --font_size_title_big: 80px;
@@ -20,6 +19,37 @@
     .text_block > *
     {
         margin-bottom: 28px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head
+    {
+        min-height: 624px;
+    }
+
+    .page_head.default_h
+    {
+        min-height: 0;
+    }
+
+
+    .page_head .data,
+    .page_head .data.middle_w,
+    .page_head .data.big_w
+    {
+        width: 620px;
+    }
+
+
+    .page_head .image
+    {
+        right: 0;
+
+        width: calc(100% - 700px);
     }
 
 
@@ -41,9 +71,7 @@
 
     .main_slider .link a
     {
-        font-size: 17px;
-
-        padding: 28px 51px 27px;
+        padding: 22px 47px 21px;
     }
 
 
@@ -137,9 +165,9 @@
 
     .about_production .item .link a
     {
-        font-size: 17px;
+        padding: 22px 49px 21px;
 
-        padding: 28px 51px 27px;
+        letter-spacing: 1.14px;
     }
 
 
@@ -149,19 +177,13 @@
     ------------*/
     .awards .data
     {
-        padding: 68px 0;
+        padding: 78px 0 98px;
     }
 
 
     .awards .title span
     {
         margin-left: 180px;
-    }
-
-
-    .awards .items img
-    {
-        width: 208px;
     }
 
 
@@ -321,6 +343,93 @@
         width: 340px;
         height: 220px;
         margin-right: -540px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .article .info
+    {
+        padding: 55px 51px 39px;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info .ingredients .image
+    {
+        width: 520px;
+        margin-right: -150px;
+    }
+
+
+
+    /*--------------------
+        Direction head
+    --------------------*/
+    .direction_head
+    {
+        height: 650px;
+        padding-top: 260px;
+    }
+
+
+
+    /*--------------------
+        Direction info
+    --------------------*/
+    .direction_info .data
+    {
+        margin-left: 400px;
+    }
+
+
+    .direction_info .bg
+    {
+        left: 40px;
+
+        margin-left: 0;
+    }
+
+
+
+    /*---------------
+        Where buy
+    ---------------*/
+    .where_buy .link a
+    {
+        padding: 22px 47px 21px;
+    }
+
+
+
+    /*-------------
+        History
+    -------------*/
+    .history .block_desc
+    {
+        width: 668px;
+    }
+
+
+
+    /*----------
+        Team
+    ----------*/
+    .team .data
+    {
+        width: 560px;
+    }
+
+
+    .team .boss
+    {
+        width: 604px;
+        margin-left: auto;
     }
 
 

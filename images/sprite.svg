@@ -1,7 +1,21 @@
 <svg width="0" height="0" class="hidden">
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 45" id="ic_arr_ver">
+    <path d="M11 17.0369L22 28.04L33 17.0369" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+  </symbol>
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" id="ic_arrow_hor">
     <path d="M3 14.5H24" stroke="currentColor"></path>
     <path d="M13.5 25L24.5 14L13.5 3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 44" id="ic_arrow_hor2">
+    <path d="M20.5078 11L9.50471 22L20.5078 33" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+    <line x1="34.5469" y1="22.5" x2="9.54688" y2="22.5" stroke="currentColor"></line>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 45" id="ic_arrow_ver">
+    <path d="M11 23.5046L22 34.5077L33 23.5046" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+    <line x1="22.5" y1="9.46777" x2="22.5" y2="34.4678" stroke="currentColor"></line>
+  </symbol>
+  <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 13" id="ic_check">
+    <path d="M17 1L6 12L1 7" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
   </symbol>
   <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 21" id="ic_close">
     <path d="M19.726 1.68774C20.1058 1.28681 20.0887 0.653878 19.6877 0.274047C19.2868 -0.105784 18.6539 -0.0886773 18.274 0.312255L19.726 1.68774ZM1.72595 20.6877L19.726 1.68774L18.274 0.312255L0.274047 19.3123L1.72595 20.6877Z" fill="currentColor"></path>

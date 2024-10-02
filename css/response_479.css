@@ -5,9 +5,30 @@
     -------------------*/
     :root
     {
-        --font_size_title_small: 35px;
-        --font_size_title: 40px;
-        --font_size_title_big: 45px;
+        --font_size_title_small: 32px;
+        --font_size_title: 32px;
+        --font_size_title_big: 34px;
+    }
+
+
+    .cont,
+    .cont.big
+    {
+        padding: 0 20px;
+    }
+
+
+
+    /*----------
+        Tabs
+    ----------*/
+    .tabs
+    {
+        width: calc(100% + 40px);
+        margin: 0 -20px 50px;
+        padding: 0 20px;
+
+        scroll-padding: 0 20px;
     }
 
 
@@ -17,7 +38,47 @@
     ------------*/
     header .logo img
     {
-        width: 200px;
+        width: 140px;
+    }
+
+
+
+    /*------------------
+        Form elements
+    ------------------*/
+    .form .file label
+    {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        gap: 12px;
+    }
+
+
+    .form .submit_btn
+    {
+        width: 100%;
+        min-width: 0;
+        padding: 12px 31px 10px;
+    }
+
+
+    .form .exp br
+    {
+        display: none;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block img
+    {
+        width: calc(100% + 40px);
+        max-width: calc(100% + 40px);
+        margin-right: -20px;
+        margin-left: -20px;
     }
 
 
@@ -27,7 +88,7 @@
     ---------------*/
     .main_menu .head .logo img
     {
-        width: 200px;
+        width: 140px;
     }
 
 
@@ -44,22 +105,27 @@
 
 
 
-    /*-----------------
-        Main slider
-    -----------------*/
-    .main_slider .cont
+    /*------------
+        Awards
+    ------------*/
+    .awards .items img
     {
-        height: 440px;
+        width: 160px;
     }
 
 
 
-    /*------------
-        Awards
-    ------------*/
-    .awards .title br
+    /*----------------------
+        About production
+    ----------------------*/
+    .about_production .item .image,
+    .about_production .item .image.small,
+    .about_production .item .info + .image
     {
-        display: none;
+        width: calc(100% + 40px);
+        max-width: calc(100% + 40px);
+        margin-right: -20px;
+        margin-left: -20px;
     }
 
 
@@ -67,139 +133,124 @@
     /*------------------
         Our products
     ------------------*/
-    .our_products .title,
-    .our_products .text_block
+    .our_products .gallery .row.mob_carousel
     {
-        padding-right: 0;
-    }
-
-
-    .our_products .pluses
-    {
-        padding-right: 100px;
-    }
-
-
-    .our_products .pluses .row
-    {
-        margin-left: 0;
-
-        gap: 0;
-    }
-
-
-    .our_products .pluses .item
-    {
-        display: flex;
-        align-content: flex-start;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        justify-content: space-between;
-
-        width: 100%;
-        margin-left: 0;
-
-        text-align: left;
-    }
-
-
-    .our_products .pluses .item + .item
-    {
-        margin-top: 20px;
-    }
-
-
-    .our_products .pluses .item .icon
-    {
-        margin-bottom: 0;
-    }
-
-
-    .our_products .pluses .item .icon + *
-    {
-        align-self: center;
-
-        width: calc(100% - 80px);
-    }
-
-
-    .our_products .link
-    {
-        top: 100%;
-        bottom: auto;
-    }
-
-
-    .our_products .link a
-    {
-        font-size: 15px;
-
-        width: 100px;
-        height: 100px;
-    }
-
-
-
-    .our_products .data .pluses
-    {
-        padding-right: 80px;
-    }
-
-
-    .our_products .data .info .link
-    {
-        right: -20px;
-        bottom: -80px;
-    }
-
-
-    .our_products .data .gallery .row
-    {
-        margin-bottom: -12px;
-        margin-left: -12px;
-    }
-
-
-    .our_products .data .gallery .row > *
-    {
-        width: calc(50% - 12px);
-        margin-bottom: 12px;
-        margin-left: 12px;
+        width: calc(100% + 40px);
+        margin-right: -20px;
+        margin-left: -20px;
+        padding: 0 20px;
     }
 
 
 
     /*------------------
-        Loyalty card
+        Article info
     ------------------*/
-    .loyalty_card .text_block
+    .article_info .article_data
     {
-        width: calc(100% - 124px);
-        margin-top: 0;
+        margin: 30px -20px 0;
+        padding: 40px 20px;
     }
 
 
-    .loyalty_card .link
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info .article_data
     {
-        margin-right: 0;
+        margin: 30px -20px 0;
+        padding: 40px 20px;
     }
 
 
-    .loyalty_card .link a
-    {
-        font-size: 15px;
 
-        width: 100px;
-        height: 100px;
+    .article_info .ingredients .list
+    {
+        width: calc(100% + 40px);
+        margin-right: -20px;
+        margin-left: -20px;
     }
 
 
-    .loyalty_card .img
+    .article_info .ingredients .list > *
     {
-        bottom: -80px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
 
-        width: 128px;
-        height: 83px;
-        margin-right: 12px;
+
+
+    .article_info .ingredients .image
+    {
+        width: calc(100% + 40px);
+        max-width: calc(100% + 40px);
+        margin-right: -20px;
+        margin-left: -20px;
+    }
+
+
+
+    /*------------
+        Videos
+    ------------*/
+    .videos .videos_data
+    {
+        margin: 30px -20px 0;
+        padding: 40px 20px;
+    }
+
+
+
+    /*------------
+        Stores
+    ------------*/
+    .stores .list .head
+    {
+        padding: 24px 20px;
+    }
+
+
+    .stores .data .addresses
+    {
+        padding: 0 20px;
+    }
+
+
+
+    /*--------------------
+        Direction info
+    --------------------*/
+    .direction_info .data .title
+    {
+        font-size: 32px;
+    }
+
+
+
+    /*---------------
+        Where buy
+    ---------------*/
+    .where_buy .block_head .title br
+    {
+        display: block;
+    }
+
+
+    .where_buy .link a
+    {
+        width: 100%;
+        padding: 22px 23px 21px;
+    }
+
+
+
+    /*----------
+        Team
+    ----------*/
+    .team .rules .link a
+    {
+        width: 100%;
+        padding: 22px 23px 21px;
     }
 }

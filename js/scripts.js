@@ -31,8 +31,23 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 
 
-	// Products slider
+	// Marquee
 	new Swiper('.marquee .swiper', {
+		spaceBetween: 0,
+		speed: 15000,
+		loop: true,
+		centeredSlides: true,
+		slidesPerView: 'auto',
+		allowTouchMove: false,
+		autoplay: {
+			delay: 1,
+			disableOnInteraction: true
+		}
+	})
+
+
+	// Page head marquee
+	new Swiper('.page_head_marquee .swiper', {
 		spaceBetween: 0,
 		speed: 15000,
 		loop: true,
@@ -80,6 +95,42 @@ document.addEventListener('DOMContentLoaded', function () {
 	})
 
 
+	// Tabs
+	var locationHash = window.location.hash
+
+	$('body').on('click', '.tabs .btn', function(e) {
+		e.preventDefault()
+
+		if (!$(this).hasClass('active')) {
+			let parent = $(this).closest('.tabs_container'),
+				activeTab = $(this).data('content'),
+				activeTabContent = $(activeTab),
+				level = $(this).data('level')
+
+			parent.find('.tabs:first .btn').removeClass('active')
+			parent.find('.tab_content.' + level).removeClass('active')
+
+			$(this).addClass('active')
+			activeTabContent.addClass('active')
+		}
+	})
+
+	if (locationHash && $('.tabs_container').length) {
+		let activeTab = $(`.tabs button[data-content="${locationHash}"]`),
+			activeTabContent = $(locationHash),
+			parent = activeTab.closest('.tabs_container'),
+			level = activeTab.data('level')
+
+		parent.find('.tabs:first .btn').removeClass('active')
+		parent.find('.tab_content.' + level).removeClass('active')
+
+		activeTab.addClass('active')
+		activeTabContent.addClass('active')
+
+		$('html, body').stop().animate({ scrollTop: $activeTabContent.offset().top }, 1000)
+	}
+
+
 	// Menu
 	$('header .menu_btn, .main_menu .head .close_btn').click((e) => {
 		e.preventDefault()
@@ -117,6 +168,69 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		})
 	}
+
+
+	// Accordion
+	$('body').on('click', '.accordion .accordion_item .head', function(e) {
+		e.preventDefault()
+
+		let item = $(this).closest('.accordion_item'),
+			accordion = $(this).closest('.accordion')
+
+		if (item.hasClass('active')) {
+			item.removeClass('active').find('.data').slideUp(300)
+		} else {
+			accordion.find('.accordion_item').removeClass('active')
+			accordion.find('.data').slideUp(300)
+
+			item.addClass('active').find('.data').slideDown(300)
+		}
+	})
+
+
+	// Stores
+	$('.stores .list .head').click(function(e) {
+		e.preventDefault()
+
+		$(this).toggleClass('active').next().slideToggle(300)
+	})
+
+
+	// Phone input mask
+	const phoneInputs = document.querySelectorAll('input[type=tel]')
+
+	if (phoneInputs) {
+		phoneInputs.forEach(el => {
+			IMask(el, {
+				mask: '+{7} (000) 000-00-00',
+				lazy: true
+			})
+		})
+	}
+
+
+	// Select file
+	// const fileInputs = document.querySelectorAll('form input[type=file]')
+
+	// if (fileInputs) {
+	// 	fileInputs.forEach(el => {
+	// 		el.addEventListener('change', () => el.closest('.file').querySelector('label span').innerText = el.value)
+	// 	})
+	// }
+})
+
+
+
+window.addEventListener('load', function () {
+	// Products
+	let products = $('.products .masonry'),
+		productsGutter = parseInt(products.css('--gutter'))
+
+	masonry = products.masonry({
+		gutter: productsGutter,
+		itemSelector: '.product',
+		columnWidth: products.find('.product').outerWidth()
+	})
 })
 
 
@@ -142,7 +256,7 @@ window.addEventListener('resize', function () {
 		if (!fakeResize2) {
 			fakeResize2 = true
 
-			if (windowW < 375) document.getElementsByTagName('meta')['viewport'].content = 'width=375, user-scalable=no'
+			if (windowW < 360) document.getElementsByTagName('meta')['viewport'].content = 'width=360, user-scalable=no'
 		} else {
 			fakeResize = false
 			fakeResize2 = true

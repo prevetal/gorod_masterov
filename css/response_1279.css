@@ -6,10 +6,9 @@
     -------------------*/
     :root
     {
-        --font_size: 16px;
-        --font_size_title_small: 50px;
-        --font_size_title: 56px;
-        --font_size_title_big: 64px;
+        --font_size_title_small: 45px;
+        --font_size_title: 60px;
+        --font_size_title_big: 70px;
     }
 
 
@@ -25,6 +24,16 @@
         margin-bottom: 100px;
     }
 
+    .block.medium
+    {
+        margin-bottom: 80px;
+    }
+
+    .block.small
+    {
+        margin-bottom: 60px;
+    }
+
 
     .cont,
     .cont.big
@@ -34,12 +43,12 @@
 
 
 
-    /*-----------------
-        Block title
-    -----------------*/
-    .block_title
+    /*----------------
+        Pagination
+    ----------------*/
+    .pagination
     {
-        margin-bottom: 28px;
+        margin-top: 52px;
     }
 
 
@@ -50,6 +59,71 @@
     .text_block > *
     {
         margin-bottom: 24px;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    .page_head.padding
+    {
+        padding-bottom: 80px;
+    }
+
+
+    .page_head.default_h
+    {
+        min-height: 0;
+    }
+
+
+    .page_head .global_title
+    {
+        font-size: 140px;
+
+        top: -98px;
+        left: 160px;
+
+        margin-left: 0;
+    }
+
+
+    .page_head .data,
+    .page_head .data.middle_w,
+    .page_head .data.big_w
+    {
+        width: 100%;
+    }
+
+
+    .page_head .image
+    {
+        position: relative;
+        right: 0;
+
+        width: calc(100% + 48px);
+        max-width: calc(100% + 48px);
+        margin: 50px -24px 0;
+    }
+
+
+    .page_head .image.offset_top
+    {
+        top: 0;
+    }
+
+
+    .page_head .image.mob_hide
+    {
+        display: none;
+    }
+
+
+    .page_head .bg,
+    .page_head .bg2
+    {
+        display: none;
     }
 
 
@@ -66,14 +140,6 @@
     .main_slider .link
     {
         margin-top: 24px;
-    }
-
-
-    .main_slider .link a
-    {
-        font-size: var(--font_size);
-
-        padding: 20px 39px 20px;
     }
 
 
@@ -111,16 +177,9 @@
     }
 
 
-    .about_info .title
-    {
-        width: calc(50% - 12px);
-    }
-
-
+    .about_info .title,
     .about_info .text_block
     {
-        font-size: 18px;
-
         width: calc(50% - 12px);
     }
 
@@ -157,14 +216,6 @@
     }
 
 
-    .about_production .item .link a
-    {
-        font-size: var(--font_size);
-
-        padding: 20px 39px 20px;
-    }
-
-
 
     /*------------
         Awards
@@ -178,12 +229,6 @@
     .awards .title span
     {
         margin-left: 148px;
-    }
-
-
-    .awards .items img
-    {
-        width: 200px;
     }
 
 
@@ -308,6 +353,521 @@
         width: 320px;
         height: 207px;
         margin-right: -520px;
+    }
+
+
+
+    /*---------------
+        Franchise
+    ---------------*/
+    .franchise .form
+    {
+        width: 100%;
+        margin-top: 16px;
+    }
+
+
+    .franchise .form .sub_title
+    {
+        margin-bottom: 60px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .grid
+    {
+        display: flex;
+        flex-direction: column;
+
+        gap: 30px;
+    }
+
+
+    .articles .article .desc
+    {
+        width: 498px;
+        max-width: 100%;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info .article_data
+    {
+        margin: 36px -24px 0;
+        padding: 48px 24px;
+    }
+
+
+
+    .article_info .ingredients .info
+    {
+        width: 440px;
+    }
+
+
+    .article_info .ingredients .title,
+    .article_info .ingredients .list > *
+    {
+        padding-left: 0;
+    }
+
+
+    .article_info .ingredients .image
+    {
+        width: calc(100% - 480px);
+        margin: 0 -24px 0 0;
+    }
+
+
+
+    .article_info .step
+    {
+        gap: 48px;
+    }
+
+
+    .article_info .step .image + *
+    {
+        max-width: calc(100% - 458px);
+    }
+
+
+
+    /*------------
+        Videos
+    ------------*/
+    .videos .videos_data
+    {
+        margin: 36px -24px 0;
+        padding: 48px 24px;
+    }
+
+
+    .videos .videos_data .title
+    {
+        font-size: 45px;
+
+        margin-bottom: 30px;
+    }
+
+
+    .videos .row
+    {
+        margin-bottom: -30px;
+    }
+
+
+    .videos .row > *
+    {
+        margin-bottom: 30px;
+    }
+
+
+
+    /*-----------
+        Media
+    -----------*/
+    .media .media_data
+    {
+        margin: 36px -24px 0;
+        padding: 48px 24px;
+    }
+
+
+    .media .media_data .title
+    {
+        font-size: 45px;
+
+        margin-bottom: 30px;
+    }
+
+
+    .media .pagination
+    {
+        margin-top: 60px;
+    }
+
+
+
+    /*--------------------
+        Direction info
+    --------------------*/
+    .direction_info .data
+    {
+        margin-left: 344px;
+    }
+
+
+    .direction_info .bg
+    {
+        left: 24px;
+    }
+
+
+    .direction_info .bg3
+    {
+        position: relative;
+        right: 0;
+        bottom: 0;
+
+        margin: 74px auto 0;
+    }
+
+
+
+    /*------------
+        Banner
+    ------------*/
+    .banner
+    {
+        padding: 60px 0;
+    }
+
+
+    .banner .title
+    {
+        gap: 30px;
+    }
+
+
+    .banner .title .lh
+    {
+        font-size: 55px;
+    }
+
+
+    .banner .title small
+    {
+        font-size: 30px;
+
+        letter-spacing: .3px;
+    }
+
+
+    .banner .title span
+    {
+        margin-left: 0;
+    }
+
+
+
+    /*---------------
+        Where buy
+    ---------------*/
+    .where_buy .block_head
+    {
+        margin-bottom: 43px;
+    }
+
+
+
+    /*----------------
+        Production
+    ----------------*/
+    .production .text_block
+    {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+
+
+    /*------------
+        For us
+    ------------*/
+    .for_us .info
+    {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .for_us .block_title
+    {
+        margin-bottom: 50px;
+    }
+
+
+    .for_us .title
+    {
+        font-size: 60px;
+    }
+
+
+    .for_us .title span
+    {
+        margin-left: 0;
+    }
+
+
+    .for_us .pluses
+    {
+        width: 100%;
+        margin-top: 40px;
+        margin-right: 0;
+    }
+
+
+    .for_us .pluses .row
+    {
+        justify-content: center;
+    }
+
+
+
+    /*-------------
+        History
+    -------------*/
+    .history
+    {
+        padding-top: 190px;
+    }
+
+
+    .history .global_title
+    {
+        font-size: 130px;
+
+        top: 32px;
+        left: 0;
+    }
+
+
+    .history .block_desc
+    {
+        width: 100%;
+    }
+
+
+    .history .bg
+    {
+        position: relative;
+        right: 0;
+
+        width: 100%;
+        height: auto;
+        margin: 50px 0 0;
+    }
+
+
+
+    /*----------
+        Team
+    ----------*/
+    .team
+    {
+        padding-top: 60px;
+    }
+
+
+    .team .global_title
+    {
+        font-size: 130px;
+
+        top: -80px;
+        left: 0;
+
+        margin-left: 0;
+    }
+
+
+    .team .data
+    {
+        width: 100%;
+    }
+
+
+    .team .block_desc
+    {
+        margin-top: 31px;
+    }
+
+
+    .team .boss
+    {
+        width: 300px;
+        margin: 50px auto 0;
+    }
+
+
+    .team .boss .photo
+    {
+        width: 100%;
+        margin: 0;
+    }
+
+
+    .team .boss .desc
+    {
+        display: none;
+    }
+
+
+
+    .team .rules
+    {
+        width: 100%;
+        margin-top: 80px;
+    }
+
+
+    .team .rules .block_title
+    {
+        font-size: 16px;
+
+        margin-bottom: 20px;
+        padding: 0;
+
+        text-align: center;
+    }
+
+
+    .team .rules .title
+    {
+        font-size: 30px;
+
+        padding: 0;
+
+        text-align: center;
+    }
+
+
+    .team .rules .title .span1,
+    .team .rules .title .span2
+    {
+        margin-left: 0;
+    }
+
+
+    .team .rules .image
+    {
+        width: calc(100% + 48px);
+        margin: 50px -24px 0;
+    }
+
+
+    .team .rules .image .count
+    {
+        font-size: 113px;
+
+        bottom: -79px;
+        left: 47px;
+    }
+
+
+    .team .rules .link
+    {
+        margin-top: 70px;
+    }
+
+
+    .team .rules .link a
+    {
+        padding: 22px 47px 21px;
+    }
+
+
+
+    /*------------------------
+        Exhibitions awards
+    ------------------------*/
+    .exhibitions_awards
+    {
+        padding-bottom: 80px;
+    }
+
+
+    .exhibitions_awards .data
+    {
+        width: 100%;
+    }
+
+
+    .exhibitions_awards .archive_link
+    {
+        margin-top: 280px;
+    }
+
+
+    .exhibitions_awards .images
+    {
+        display: flex;
+        align-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        width: 100%;
+        margin-top: 50px;
+
+        gap: 30px;
+    }
+
+
+    .exhibitions_awards .gallery
+    {
+        margin-top: 84px;
+    }
+
+
+    .exhibitions_awards .gallery .row
+    {
+        display: block;
+        overflow: auto;
+
+        margin-bottom: 0;
+        margin-left: 0;
+
+        white-space: nowrap;
+
+        scroll-padding: 0 20px;
+        scroll-snap-type: x mandatory;
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+
+    .exhibitions_awards .gallery .row::-webkit-scrollbar
+    {
+        display: none !important;
+
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+
+    .exhibitions_awards .gallery .row::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .exhibitions_awards .gallery .row > *
+    {
+        display: inline-block;
+
+        width: 464px;
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+
+        scroll-snap-align: start;
+    }
+
+    .exhibitions_awards .gallery .row > * + *
+    {
+        margin-left: 16px;
     }
 
 

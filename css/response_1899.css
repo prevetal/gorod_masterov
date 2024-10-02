@@ -8,4 +8,45 @@
     {
         padding: 0 40px;
     }
+
+
+
+    /*--------------------
+        Direction head
+    --------------------*/
+    .direction_head
+    {
+        height: 750px;
+        padding-top: 288px;
+    }
+
+
+
+    /*------------
+        Awards
+    ------------*/
+    .awards .cont.big
+    {
+        padding: 0;
+    }
+
+
+
+    /*------------------
+        Article info
+    ------------------*/
+    .article_info .ingredients .image
+    {
+        margin-right: -180px;
+    }
+
+
+
+    /*------------
+        For us
+    ------------*/
+    .for_us .pluses
+    {
+        margin-right: -40px;
+    }
 }
