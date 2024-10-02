@@ -377,15 +377,6 @@
     /*--------------
         Articles
     --------------*/
-    .articles .grid
-    {
-        display: flex;
-        flex-direction: column;
-
-        gap: 30px;
-    }
-
-
     .articles .article .desc
     {
         width: 498px;

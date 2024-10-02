@@ -253,4 +253,21 @@
         width: 100%;
         padding: 22px 23px 21px;
     }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .article .thumb
+    {
+        display: none;
+    }
+
+
+    .articles .article .info
+    {
+        min-height: 376px;
+        padding: 30px 20px;
+    }
 }
