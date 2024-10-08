@@ -57,48 +57,11 @@
     ----------*/
     .tabs
     {
-        display: block;
-        overflow: auto;
-
         width: calc(100% + 48px);
         margin: 0 -24px 50px;
         padding: 0 24px;
 
-        white-space: nowrap;
-
         scroll-padding: 0 24px;
-        scroll-snap-type: x mandatory;
-        scrollbar-color: transparent transparent !important;
-        scrollbar-width: thin !important;
-    }
-
-
-    .tabs::-webkit-scrollbar
-    {
-        display: none !important;
-
-        width: 0 !important;
-        height: 0 !important;
-
-        background-color: transparent !important;
-    }
-
-    .tabs::-webkit-scrollbar-thumb
-    {
-        background-color: transparent !important;
-    }
-
-
-    .tabs .btn
-    {
-        display: inline-block;
-
-        max-width: none;
-        margin: 0;
-
-        vertical-align: top;
-
-        scroll-snap-align: start;
     }
 
 
@@ -528,24 +491,9 @@
     }
 
 
-    .our_products .gallery .row.mob_carousel
-    {
-        width: calc(100% + 48px);
-        margin-right: -24px;
-        margin-left: -24px;
-        padding: 0 24px;
-    }
-
-
-    .our_products .gallery .row.mob_carousel > *
+    .our_products .gallery .swiper-slide
     {
         width: 100vw;
-    }
-
-
-    .our_products .gallery .row.mob_carousel > * + *
-    {
-        margin-left: -4px;
     }
 
 
@@ -960,6 +908,12 @@
     /*------------
         Stores
     ------------*/
+    .stores .block_head
+    {
+        margin-bottom: 40px;
+    }
+
+
     .stores .list .head
     {
         padding: 24px;
@@ -1333,6 +1287,120 @@
     .exhibitions_awards .gallery .row > *
     {
         width: 100vw;
+    }
+
+
+
+    /*-----------------------
+        Loyalty card info
+    -----------------------*/
+    .loyalty_card_info .card
+    {
+        width: 318px;
+        height: auto;
+    }
+
+
+    .loyalty_card_info .row
+    {
+        margin-top: 30px;
+    }
+
+
+    .loyalty_card_info .row > *
+    {
+        width: 100%;
+    }
+
+
+    .loyalty_card_info .item
+    {
+        text-align: center;
+    }
+
+
+    .loyalty_card_info .item .val
+    {
+        font-size: 44px;
+    }
+
+
+    .loyalty_card_info .attention
+    {
+        font-size: 18px;
+    }
+
+
+    .loyalty_card_info .attention .pre_title,
+    .loyalty_card_info .attention .title
+    {
+        letter-spacing: 2.16px;
+    }
+
+
+
+    /*------------------------
+        Loyalty card about
+    ------------------------*/
+    .loyalty_card_about .row
+    {
+        gap: 50px;
+    }
+
+
+    .loyalty_card_about .col
+    {
+        gap: 50px;
+    }
+
+
+    .loyalty_card_about .block_head
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .loyalty_card_about .attention .pre_title
+    {
+        font-size: 16px;
+
+        margin-bottom: 10px;
+
+        letter-spacing: 3.2px;
+    }
+
+
+    .loyalty_card_about .attention .title
+    {
+        font-size: 20px;
+
+        letter-spacing: 0;
+    }
+
+
+
+    /*---------
+        FAQ
+    ---------*/
+    .FAQ .accordion .head
+    {
+        padding: 28px 20px;
+    }
+
+
+    .FAQ .accordion .head .title
+    {
+        font-size: 20px;
+
+        width: calc(100% - 59px);
+
+        letter-spacing: 2.4px;
+    }
+
+
+    .FAQ .accordion .data
+    {
+        padding: 0 31px 35px 20px;
     }
 
 

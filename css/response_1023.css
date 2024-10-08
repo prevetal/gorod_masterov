@@ -35,6 +35,57 @@
 
 
 
+    /*----------
+        Tabs
+    ----------*/
+    .tabs
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 90px);
+        margin: 0 -45px 50px;
+        padding: 0 45px;
+
+        white-space: nowrap;
+
+        scroll-padding: 0 45px;
+        scroll-snap-type: x mandatory;
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+
+    .tabs::-webkit-scrollbar
+    {
+        display: none !important;
+
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .tabs::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .tabs .btn
+    {
+        display: inline-block;
+
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+
+        scroll-snap-align: start;
+    }
+
+
+
     /*------------
         Header
     ------------*/
@@ -316,7 +367,7 @@
 
     .our_products .link
     {
-        margin-top: 236px;
+        margin-top: 272px;
     }
 
 
@@ -355,68 +406,6 @@
     {
         height: 85px;
         margin-bottom: 21px;
-    }
-
-
-    .our_products .gallery
-    {
-        margin-top: 85px;
-        padding: 0 45px;
-    }
-
-
-    .our_products .gallery .row.mob_carousel
-    {
-        display: block;
-        overflow: auto;
-
-        width: calc(100% + 90px);
-        margin-right: -45px;
-        margin-left: -45px;
-        padding: 0 45px;
-
-        white-space: nowrap;
-
-        scroll-padding: 0 45px;
-        scroll-snap-type: x mandatory;
-        scrollbar-color: transparent transparent !important;
-        scrollbar-width: thin !important;
-    }
-
-
-    .our_products .gallery .row.mob_carousel::-webkit-scrollbar
-    {
-        display: none !important;
-
-        width: 0 !important;
-        height: 0 !important;
-
-        background-color: transparent !important;
-    }
-
-
-    .our_products .gallery .row.mob_carousel::-webkit-scrollbar-thumb
-    {
-        background-color: transparent !important;
-    }
-
-
-    .our_products .gallery .row.mob_carousel > *
-    {
-        display: inline-block;
-
-        width: 464px;
-        max-width: none;
-        margin: 0;
-
-        vertical-align: top;
-
-        scroll-snap-align: start;
-    }
-
-    .our_products .gallery .row.mob_carousel > * + *
-    {
-        margin-left: 16px;
     }
 
 

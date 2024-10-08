@@ -863,6 +863,155 @@
 
 
 
+    /*-----------------------
+        Loyalty card info
+    -----------------------*/
+    .loyalty_card_info .global_title
+    {
+        display: none;
+    }
+
+
+    .loyalty_card_info .card
+    {
+        position: relative;
+        right: 0;
+
+        margin: 60px auto 0;
+    }
+
+
+    .loyalty_card_info .row > *
+    {
+        width: calc(50% - 25px);
+    }
+
+
+    .loyalty_card_info .item
+    {
+        text-align: center;
+    }
+
+
+    .loyalty_card_info .item .val
+    {
+        font-size: 65px;
+
+        margin-bottom: 10px;
+    }
+
+
+    .loyalty_card_info .item .desc
+    {
+        width: 280px;
+        max-width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+    .loyalty_card_info .item .desc br
+    {
+        display: none;
+    }
+
+
+    .loyalty_card_info .attention
+    {
+        width: 595px;
+        max-width: 100%;
+        margin: 60px auto 0;
+
+        text-align: center;
+    }
+
+
+    .loyalty_card_info .bg_img
+    {
+        display: none;
+    }
+
+
+
+    /*------------
+        Stores
+    ------------*/
+    .stores .block_head
+    {
+        padding: 0 45px;
+
+        text-align: center;
+    }
+
+
+
+    /*------------------------
+        Loyalty card about
+    ------------------------*/
+    .loyalty_card_about
+    {
+        padding: 80px 0;
+    }
+
+
+    .loyalty_card_about .row
+    {
+        gap: 60px;
+    }
+
+
+    .loyalty_card_about .col
+    {
+        width: 100%;
+        max-width: 100%;
+
+        gap: 60px;
+    }
+
+
+    .loyalty_card_about .block_head
+    {
+        margin-bottom: 20px;
+    }
+
+
+    .loyalty_card_about .attention .pre_title
+    {
+        margin-bottom: 15px;
+    }
+
+
+    .loyalty_card_about .attention .title
+    {
+        font-size: 24px;
+
+        letter-spacing: .24px;
+    }
+
+
+
+    /*---------
+        FAQ
+    ---------*/
+    .FAQ .cont
+    {
+        padding: 0;
+    }
+
+
+    .FAQ .accordion .head
+    {
+        padding: 32px 45px;
+    }
+
+
+    .FAQ .accordion .data
+    {
+        padding: 0 92px 33px 45px;
+    }
+
+
+
     /*------------
         Footer
     ------------*/

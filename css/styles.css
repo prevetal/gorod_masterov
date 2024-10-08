@@ -2192,18 +2192,15 @@ header .menu_btn .icon
 }
 
 
-.our_products .gallery .row
+.our_products .gallery .swiper-wrapper
 {
-    margin-bottom: -21px;
-    margin-left: -21px;
+    transition-timing-function: linear !important;
 }
 
 
-.our_products .gallery .row > *
+.our_products .gallery .swiper-slide
 {
-    width: calc(25% - 21px);
-    margin-bottom: 21px;
-    margin-left: 21px;
+    width: 464px;
 }
 
 

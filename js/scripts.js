@@ -61,6 +61,33 @@ document.addEventListener('DOMContentLoaded', function () {
 	})
 
 
+	// Our products - gallery slider
+	const gallerySliders = [],
+		gallery = document.querySelectorAll('.gallery .swiper')
+
+	gallery.forEach((el, i) => {
+		el.classList.add('gallery_s' + i)
+
+		let options = {
+			loop: true,
+			allowTouchMove: false,
+			speed: 15000,
+			watchSlidesProgress: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			lazy: true,
+			spaceBetween: 20,
+			slidesPerView: 'auto',
+			autoplay: {
+				delay: 1,
+				disableOnInteraction: true
+			}
+		}
+
+		gallerySliders.push(new Swiper('.gallery_s' + i, options))
+	})
+
+
 	// Fancybox
 	Fancybox.defaults.autoFocus = false
 	Fancybox.defaults.trapFocus = false
@@ -226,7 +253,7 @@ window.addEventListener('load', function () {
 	let products = $('.products .masonry'),
 		productsGutter = parseInt(products.css('--gutter'))
 
-	masonry = products.masonry({
+	products.masonry({
 		gutter: productsGutter,
 		itemSelector: '.product',
 		columnWidth: products.find('.product').outerWidth()

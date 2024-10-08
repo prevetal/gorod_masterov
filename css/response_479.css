@@ -131,19 +131,6 @@
 
 
     /*------------------
-        Our products
-    ------------------*/
-    .our_products .gallery .row.mob_carousel
-    {
-        width: calc(100% + 40px);
-        margin-right: -20px;
-        margin-left: -20px;
-        padding: 0 20px;
-    }
-
-
-
-    /*------------------
         Article info
     ------------------*/
     .article_info .article_data
@@ -259,15 +246,9 @@
     /*--------------
         Articles
     --------------*/
-    .articles .article .thumb
-    {
-        display: none;
-    }
-
-
     .articles .article .info
     {
-        min-height: 376px;
+        min-height: 0;
         padding: 30px 20px;
     }
 }

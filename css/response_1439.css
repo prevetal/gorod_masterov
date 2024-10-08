@@ -245,21 +245,6 @@
     }
 
 
-    .our_products .gallery .row
-    {
-        margin-bottom: -20px;
-        margin-left: -20px;
-    }
-
-
-    .our_products .gallery .row > *
-    {
-        width: calc(25% - 20px);
-        margin-bottom: 20px;
-        margin-left: 20px;
-    }
-
-
 
     .our_products .data
     {
@@ -430,6 +415,46 @@
     {
         width: 604px;
         margin-left: auto;
+    }
+
+
+
+    /*-----------------------
+        Loyalty card info
+    -----------------------*/
+    .loyalty_card_info .card
+    {
+        right: 40px;
+
+        margin-right: 0;
+    }
+
+
+    .loyalty_card_info .row
+    {
+        margin-top: 60px;
+    }
+
+
+    .loyalty_card_info .item .val
+    {
+        font-size: 72px;
+    }
+
+
+
+    /*------------------------
+        Loyalty card about
+    ------------------------*/
+    .loyalty_card_about .row
+    {
+        gap: 100px;
+    }
+
+
+    .loyalty_card_about .col
+    {
+        gap: 80px;
     }
 
 
